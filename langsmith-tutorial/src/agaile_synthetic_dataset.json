@@ -1,307 +1,57 @@
 [
-    {
-      "query": "What is Agaile’s mission?",
-      "expected_answer": "Agaile’s mission is to simplify complex processes and enhance customer engagement with scalable AI tools for business growth.",
-      "metadata": {"type": "company_overview", "domain": "agaile"}
-    },
-    {
-      "query": "What vision does Agaile have for the future?",
-      "expected_answer": "Agaile envisions transforming workflows with scalable AI to spark innovation, efficiency, and growth across the enterprise landscape.",
-      "metadata": {"type": "company_overview", "domain": "agaile"}
-    },
-    {
-      "query": "Who co-founded Agaile?",
-      "expected_answer": "Agaile was co-founded by Ivo Titscher (Co-founder & CEO), Pranav Dhoolia (Co-founder & Chief Development Officer), and Joachim Kohl (Co-founder & Chief Product Officer).",
-      "metadata": {"type": "team_info", "domain": "agaile"}
-    },
-    {
-      "query": "Who is responsible for infrastructure at Agaile?",
-      "expected_answer": "Tobias Heinz serves as the Head of Infrastructure at Agaile, ensuring scalable and secure systems.",
-      "metadata": {"type": "team_info", "domain": "agaile"}
-    },
-    {
-      "query": "What is ConvertAI and what does it do?",
-      "expected_answer": "ConvertAI is an AI-powered solution designed to convert website visitors into clients through personalized insights, predictive analytics, and seamless integrations.",
-      "metadata": {"type": "product_info", "domain": "agaile"}
-    },
-    {
-      "query": "Can you detail Zoho AI Assistant’s capabilities?",
-      "expected_answer": "Zoho AI Assistant enhances customer service efficiency using natural language understanding, sentiment analysis, and auto-reply suggestions, integrating with CRMs and helpdesk tools.",
-      "metadata": {"type": "product_info", "domain": "agaile"}
-    },
+  {
+    "query": "What is Agaile's mission?",
+    "expected_answer": "Agaile's mission is to simplify complex processes and enhance customer engagement with scalable AI tools for business growth.",
+    "chatbot_answer": "Agaile's mission is to simplify complex processes and enhance customer engagement with scalable AI tools for business growth.",
+    "metadata": {"type": "company_overview", "domain": "agaile"}
+  },
+  {
+    "query": "What vision does Agaile have for the future?",
+    "expected_answer": "Agaile envisions transforming workflows with scalable AI to spark innovation, efficiency, and growth across the enterprise landscape.",
+    "chatbot_answer": "Agaile envisions transforming workflows with scalable AI to spark innovation, efficiency, and growth across the enterprise landscape.",
+    "metadata": {"type": "company_overview", "domain": "agaile"}
+  },
+  {
+    "query": "Who co-founded Agaile?",
+    "expected_answer": "Agaile was co-founded by Ivo Titscher (Co-founder & CEO), Pranav Dhoolia (Co-founder & Chief Development Officer), and Joachim Kohl (Co-founder & Chief Product Officer).",
+    "chatbot_answer": "Agaile was co-founded by Ivo Titscher (Co-founder & CEO), Pranav Dhoolia (Co-founder & Chief Development Officer), and Joachim Kohl (Co-founder & Chief Product Officer).",
+    "metadata": {"type": "team_info", "domain": "agaile"}
+  },
+  {
+    "query": "Who is responsible for infrastructure at Agaile?",
+    "expected_answer": "Tobias Heinz serves as the Head of Infrastructure at Agaile, ensuring scalable and secure systems.",
+    "chatbot_answer": "Tobias Heinz serves as the Head of Infrastructure at Agaile, ensuring scalable and secure systems.",
+    "metadata": {"type": "team_info", "domain": "agaile"}
+  },
+  {
+    "query": "What is ConvertAI and what does it do?",
+    "expected_answer": "ConvertAI is an AI-powered solution designed to convert website visitors into clients through personalized insights, predictive analytics, and seamless integrations.",
+    "chatbot_answer": "ConvertAI is an AI-powered solution designed to convert website visitors into clients through personalized insights, predictive analytics, and seamless integrations.",
+    "metadata": {"type": "product_info", "domain": "agaile"}
+  },
+  {
+    "query": "Can you detail Zoho AI Assistant's capabilities?",
+    "expected_answer": "Zoho AI Assistant enhances customer service efficiency using natural language understanding, sentiment analysis, and auto-reply suggestions, integrating with CRMs and helpdesk tools.",
+    "chatbot_answer": "Zoho AI Assistant enhances customer service efficiency using natural language understanding, sentiment analysis, and auto-reply suggestions, integrating with CRMs and helpdesk tools.",
+    "metadata": {"type": "product_info", "domain": "agaile"}
+  },
     {
       "query": "What is CAP-AI-PLATFORM designed for?",
       "expected_answer": "The CAP-AI-PLATFORM is an enterprise-level AI solution for scalable model training, deployment, MLOps, data lineage, and compliance tools, supporting large-scale implementations.",
+      "chatbot_answer": "The CAP-AI-PLATFORM is an enterprise-level AI solution for scalable model training, deployment, MLOps, data lineage, and compliance tools, supporting large-scale implementations.",
       "metadata": {"type": "product_info", "domain": "agaile"}
     },
     {
-      "query": "Where can I learn more about Agaile’s leadership team?",
-      "expected_answer": "Visit the Team page (https://agaile.ai/team/) to meet Agaile’s leadership team and learn about their roles and expertise.",
+      "query": "Where can I learn more about Agaile's leadership team?",
+      "expected_answer": "Visit the Team page (https://agaile.ai/team/) to meet Agaile's leadership team and learn about their roles and expertise.",
+      "chatbot_answer": "Visit the Team page (https://agaile.ai/team/) to meet Agaile's leadership team and learn about their roles and expertise.",
       "metadata": {"type": "team_page", "domain": "agaile"}
     },
     {
       "query": "Does Agaile integrate with popular CRM platforms?",
-      "expected_answer": "Yes. Agaile’s products, like Zoho AI Assistant and ConvertAI, integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
+      "expected_answer": "Yes. Agaile's products, like Zoho AI Assistant and ConvertAI, integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
+      "chatbot_answer": "Yes. Agaile's products, like Zoho AI Assistant and ConvertAI, integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
       "metadata": {"type": "product_integration", "domain": "agaile"}
-    },
-    {
-      "query": "What kind of support does Agaile offer?",
-      "expected_answer": "Agaile provides multi-tiered support: Standard, Premium, and Enterprise, offering faster SLAs, dedicated account managers, and 24/7 availability for top-tier plans.",
-      "metadata": {"type": "support", "domain": "agaile"}
-    },
-    {
-      "query": "How can I contact Agaile for assistance?",
-      "expected_answer": "Reach out via support@agaile.com, phone +1 (302) 455 7553, or use the contact page (https://agaile.ai/contact/) for help.",
-      "metadata": {"type": "contact_info", "domain": "agaile"}
-    },
-    {
-      "query": "What academic collaborations does Agaile have?",
-      "expected_answer": "Agaile collaborates with top institutions like Stanford and MIT for research, ensuring cutting-edge advancements in AI technologies.",
-      "metadata": {"type": "academic_partnership", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile support data privacy and compliance?",
-      "expected_answer": "Yes. Agaile’s solutions comply with data privacy standards like GDPR and CCPA, employ secure data handling, and integrate role-based access controls.",
-      "metadata": {"type": "compliance", "domain": "agaile"}
-    },
-    {
-      "query": "What is Agaile’s approach to customer success?",
-      "expected_answer": "Agaile’s VP of Customer Success ensures clients realize value from solutions through onboarding, training, and feedback loops for product improvements.",
-      "metadata": {"type": "team_info", "domain": "agaile"}
-    },
-    {
-      "query": "How does ConvertAI integrate with marketing automation tools?",
-      "expected_answer": "ConvertAI connects with marketing platforms and A/B testing frameworks, offering personalized recommendations and predictive behavior analytics.",
-      "metadata": {"type": "product_integration", "domain": "agaile"}
-    },
-    {
-      "query": "Can Agaile’s AI solutions handle multilingual support?",
-      "expected_answer": "Yes, Zoho AI Assistant and other tools support multiple languages, providing global customer service solutions.",
-      "metadata": {"type": "product_feature", "domain": "agaile"}
-    },
-    {
-      "query": "What security measures does Agaile use for AI deployments?",
-      "expected_answer": "Agaile ensures model governance, encryption, compliance checks, and robust authentication, adhering to industry security best practices.",
-      "metadata": {"type": "security", "domain": "agaile"}
-    },
-    {
-      "query": "Is there an insights dashboard offered by Agaile?",
-      "expected_answer": "Agaile’s Insights Dashboard visualizes KPIs, performance trends, and anomalies, using embedding-based insights and predictive analytics.",
-      "metadata": {"type": "product_info", "domain": "agaile"}
-    },
-    {
-      "query": "What industries can Agaile’s solutions serve?",
-      "expected_answer": "Agaile’s scalable AI tools cater to e-commerce, finance, healthcare, manufacturing, and more, adapting to various workflows and compliance needs.",
-      "metadata": {"type": "use_case", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile offer training and onboarding sessions?",
-      "expected_answer": "Yes. Agaile provides workshops, webinars, tutorials, and certification programs, ensuring clients maximize product usage and achieve desired outcomes.",
-      "metadata": {"type": "training", "domain": "agaile"}
-    },
-    {
-      "query": "What is the role of CAP-AI-PLATFORM in MLOps?",
-      "expected_answer": "The CAP-AI-PLATFORM manages model versions, automated retraining, data drift detection, and compliance, streamlining MLOps for enterprises.",
-      "metadata": {"type": "product_feature", "domain": "agaile"}
-    },
-    {
-      "query": "How does Agaile ensure ethical AI usage?",
-      "expected_answer": "Agaile integrates bias detection, explainability frameworks, and responsible AI policies, aligning models with ethical and legal standards.",
-      "metadata": {"type": "ethics", "domain": "agaile"}
-    },
-    {
-      "query": "Can I run Agaile’s solutions on-premise?",
-      "expected_answer": "Yes. Agaile supports both cloud and on-prem deployments, accommodating regulated industries needing local data control.",
-      "metadata": {"type": "deployment", "domain": "agaile"}
-    },
-    {
-      "query": "Are there any success stories related to ConvertAI?",
-      "expected_answer": "Yes, Agaile’s blog features case studies showing how ConvertAI improved user engagement and conversions for online retailers.",
-      "metadata": {"type": "case_study", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile offer pilot programs?",
-      "expected_answer": "Agaile provides short-term pilot implementations to validate ROI before full-scale deployments, guiding clients with clear success criteria.",
-      "metadata": {"type": "support", "domain": "agaile"}
-    },
-    {
-      "query": "What academic institutions does Agaile partner with?",
-      "expected_answer": "Agaile collaborates with leading universities like Stanford and MIT, integrating cutting-edge research into their AI solutions.",
-      "metadata": {"type": "academic_partnership", "domain": "agaile"}
-    },
-    {
-      "query": "How do I measure ROI on Agaile’s solutions?",
-      "expected_answer": "Agaile’s Insights Dashboard, pilot programs, and customer success teams help quantify improvements in efficiency, conversions, and user satisfaction.",
-      "metadata": {"type": "use_case", "domain": "agaile"}
-    },
-    {
-      "query": "Can Agaile’s solutions integrate with legacy systems?",
-      "expected_answer": "Yes, Agaile offers custom integration services and API connectors, ensuring smooth compatibility with existing CRMs, ERPs, and ticketing systems.",
-      "metadata": {"type": "product_integration", "domain": "agaile"}
-    },
-    {
-      "query": "What pricing models does Agaile offer?",
-      "expected_answer": "Agaile provides subscription-based tiers, enterprise licensing, and pilot discounts. Pricing details can be explored via FAQs or contacting support.",
-      "metadata": {"type": "faq_financing", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile support data privacy standards?",
-      "expected_answer": "Yes, Agaile adheres to GDPR, CCPA, and SOC 2 standards, using encryption, anonymization, and role-based controls.",
-      "metadata": {"type": "compliance", "domain": "agaile"}
-    },
-    {
-      "query": "What’s the phone number to reach Agaile?",
-      "expected_answer": "You can call +1 (302) 455 7553 for support and inquiries.",
-      "metadata": {"type": "contact_info", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile offer industry-specific solutions?",
-      "expected_answer": "Yes, Agaile tailors solutions for retail, finance, healthcare, and other verticals, with adaptative workflows and compliance checks.",
-      "metadata": {"type": "use_case", "domain": "agaile"}
-    },
-    {
-      "query": "What differentiates Agaile from other AI vendors?",
-      "expected_answer": "Agaile focuses on scalable AI, ethical innovation, user-centric design, and robust integration capabilities, providing comprehensive enterprise support.",
-      "metadata": {"type": "company_overview", "domain": "agaile"}
-    },
-    {
-      "query": "How does Agaile ensure continuous improvement?",
-      "expected_answer": "Agaile employs agile methodologies, constant feedback loops, and R&D investments to refine models, add features, and stay ahead of market changes.",
-      "metadata": {"type": "innovation", "domain": "agaile"}
-    },
-    {
-      "query": "Do they provide custom integration services?",
-      "expected_answer": "Yes, Agaile’s custom integration experts help connect products with legacy databases, proprietary software, or niche ERPs.",
-      "metadata": {"type": "product_integration", "domain": "agaile"}
-    },
-    {
-      "query": "Can Agaile’s solutions improve customer service efficiency?",
-      "expected_answer": "Zoho AI Assistant and Insights Dashboard help reduce handling times, auto-suggest replies, and improve customer satisfaction.",
-      "metadata": {"type": "product_feature", "domain": "agaile"}
-    },
-    {
-      "query": "How does CAP-AI-PLATFORM handle data drift?",
-      "expected_answer": "It automatically detects data drift, retrains or adjusts models to maintain accuracy, and alerts administrators to changes in data distributions.",
-      "metadata": {"type": "mlops", "domain": "agaile"}
-    },
-    {
-      "query": "What training materials does Agaile provide?",
-      "expected_answer": "Agaile offers online courses, certification programs, and e-learning portals, plus dedicated workshops for client teams.",
-      "metadata": {"type": "training", "domain": "agaile"}
-    },
-    {
-      "query": "Is there a known method to improve conversions using Agaile?",
-      "expected_answer": "ConvertAI predicts visitor behavior, personalizes site content, and integrates with marketing tools, thereby improving conversion rates.",
-      "metadata": {"type": "product_info", "domain": "agaile"}
-    },
-    {
-      "query": "How does Agaile ensure ethical model decisions?",
-      "expected_answer": "Agaile implements bias checks, explainability methods, and human oversight mechanisms to ensure models operate ethically and fairly.",
-      "metadata": {"type": "ethics", "domain": "agaile"}
-    },
-    {
-      "query": "Where can I find webinars or workshops?",
-      "expected_answer": "Agaile hosts monthly webinars and offers recorded workshops on their site, covering NLP, scaling AI, and compliance topics.",
-      "metadata": {"type": "training", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile help with compliance in regulated industries?",
-      "expected_answer": "Yes, Agaile supports on-prem deployments, encryption, and auditing features to meet strict regulatory requirements in industries like finance or healthcare.",
-      "metadata": {"type": "compliance", "domain": "agaile"}
-    },
-    {
-      "query": "Who leads product vision at Agaile?",
-      "expected_answer": "Joachim Kohl, Co-founder & Chief Product Officer, leads product design, ensuring user-centered innovation and market alignment.",
-      "metadata": {"type": "team_info", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile publish whitepapers or case studies?",
-      "expected_answer": "Yes, Agaile’s resources include whitepapers and case studies demonstrating how their AI tools improved customer engagement and efficiency.",
-      "metadata": {"type": "case_study", "domain": "agaile"}
-    },
-    {
-      "query": "Are there cost-saving measures achieved by ConvertAI?",
-      "expected_answer": "ConvertAI identifies user patterns and personalizes interactions, reducing marketing inefficiencies and improving overall conversion cost-effectiveness.",
-      "metadata": {"type": "faq_financing", "domain": "agaile"}
-    },
-    {
-      "query": "Can I integrate Agaile’s tools with CI/CD pipelines?",
-      "expected_answer": "Yes, CAP-AI-PLATFORM supports MLOps best practices, integrating with CI/CD pipelines for seamless model updates and version control.",
-      "metadata": {"type": "mlops", "domain": "agaile"}
-    },
-    {
-      "query": "What language support does Zoho AI Assistant have?",
-      "expected_answer": "Zoho AI Assistant supports multiple languages, enabling global businesses to serve diverse customer bases efficiently.",
-      "metadata": {"type": "product_feature", "domain": "agaile"}
-    },
-    {
-      "query": "How does Agaile handle continuous improvement post-deployment?",
-      "expected_answer": "Agaile’s Customer Success team, Insights Dashboard, and MLOps features ensure ongoing refinements, performance monitoring, and timely model enhancements.",
-      "metadata": {"type": "support", "domain": "agaile"}
-    },
-    {
-      "query": "Are there use cases in healthcare?",
-      "expected_answer": "Yes, Agaile’s adaptable AI solutions assist in patient onboarding, resource allocation, and compliance checks for healthcare providers.",
-      "metadata": {"type": "use_case", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile address data privacy challenges?",
-      "expected_answer": "Agaile employs encryption, anonymization, and compliance with global privacy laws, ensuring ethical and secure data handling.",
-      "metadata": {"type": "compliance", "domain": "agaile"}
-    },
-    {
-      "query": "What role does Pranav Dhoolia have at Agaile?",
-      "expected_answer": "Pranav Dhoolia, Co-founder & Chief Development Officer, leads R&D efforts, shaping AI frameworks and optimizing product roadmaps.",
-      "metadata": {"type": "team_info", "domain": "agaile"}
-    },
-    {
-      "query": "Can Agaile handle large data volumes?",
-      "expected_answer": "Yes. Agaile’s scalable architectures and distributed training capabilities handle large, complex datasets efficiently.",
-      "metadata": {"type": "product_feature", "domain": "agaile"}
-    },
-    {
-      "query": "Do they offer guidance on ROI calculations?",
-      "expected_answer": "Agaile’s pilot programs, insights dashboards, and customer success teams help quantify financial benefits, guiding ROI assessments.",
-      "metadata": {"type": "use_case", "domain": "agaile"}
-    },
-    {
-      "query": "What’s the long-term vision for Agaile?",
-      "expected_answer": "Agaile aims to keep innovating scalable AI solutions, fostering ethical innovation, and enabling continuous improvement across global enterprises.",
-      "metadata": {"type": "company_overview", "domain": "agaile"}
-    },
-    {
-      "query": "How does Agaile approach user-centered design?",
-      "expected_answer": "With Elena Marques as CPO, Agaile adopts design thinking, user feedback loops, and intuitive interfaces, ensuring technology serves human needs.",
-      "metadata": {"type": "team_info", "domain": "agaile"}
-    },
-    {
-      "query": "Is there a partner network for Agaile?",
-      "expected_answer": "Yes, Agaile partners with major tech providers like AWS, Microsoft, and Google Cloud, ensuring interoperability and strategic integrations.",
-      "metadata": {"type": "partner_info", "domain": "agaile"}
-    },
-    {
-      "query": "Does Agaile address cost optimization?",
-      "expected_answer": "Agaile’s AI tools streamline workflows, reduce manual interventions, improve conversion metrics, and ultimately lower operational costs.",
-      "metadata": {"type": "faq_financing", "domain": "agaile"}
-    },
-    {
-      "query": "What communication channels does Agaile support?",
-      "expected_answer": "Agaile supports email, phone, and a contact form on their site, plus scheduled support tiers for varying client needs.",
-      "metadata": {"type": "contact_info", "domain": "agaile"}
-    },
-    {
-      "query": "Do they invest in ongoing R&D?",
-      "expected_answer": "Yes, Agaile invests significantly in R&D, collaborating with academic institutions and industry partners to stay at the forefront of AI evolution.",
-      "metadata": {"type": "innovation", "domain": "agaile"}
-    },
-    {
-      "query": "How does Agaile ensure fairness in AI decisions?",
-      "expected_answer": "Agaile applies bias detection, fairness metrics, and explainable AI protocols, regularly auditing models to maintain ethical standards.",
-      "metadata": {"type": "ethics", "domain": "agaile"}
-    },
-    {
-      "query": "Can I get a demo of Agaile’s products?",
-      "expected_answer": "Yes, contact support or sales for a demo. Pilot programs also allow short-term testing to validate product fit.",
-      "metadata": {"type": "support", "domain": "agaile"}
     }
+
   ]

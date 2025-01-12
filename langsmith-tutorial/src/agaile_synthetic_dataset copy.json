@@ -1,0 +1,48 @@
+[
+    {
+      "query": "What is Agaile’s mission?",
+      "expected_answer": "Agaile’s mission is to simplify complex processes and enhance customer engagement with scalable AI tools for business growth.",
+      "metadata": {"type": "company_overview", "domain": "agaile"}
+    },
+    {
+      "query": "What vision does Agaile have for the future?",
+      "expected_answer": "Agaile envisions transforming workflows with scalable AI to spark innovation, efficiency, and growth across the enterprise landscape.",
+      "metadata": {"type": "company_overview", "domain": "agaile"}
+    },
+    {
+      "query": "Who co-founded Agaile?",
+      "expected_answer": "Agaile was co-founded by Ivo Titscher (Co-founder & CEO), Pranav Dhoolia (Co-founder & Chief Development Officer), and Joachim Kohl (Co-founder & Chief Product Officer).",
+      "metadata": {"type": "team_info", "domain": "agaile"}
+    },
+    {
+      "query": "Who is responsible for infrastructure at Agaile?",
+      "expected_answer": "Tobias Heinz serves as the Head of Infrastructure at Agaile, ensuring scalable and secure systems.",
+      "metadata": {"type": "team_info", "domain": "agaile"}
+    },
+    {
+      "query": "What is ConvertAI and what does it do?",
+      "expected_answer": "ConvertAI is an AI-powered solution designed to convert website visitors into clients through personalized insights, predictive analytics, and seamless integrations.",
+      "metadata": {"type": "product_info", "domain": "agaile"}
+    },
+    {
+      "query": "Can you detail Zoho AI Assistant’s capabilities?",
+      "expected_answer": "Zoho AI Assistant enhances customer service efficiency using natural language understanding, sentiment analysis, and auto-reply suggestions, integrating with CRMs and helpdesk tools.",
+      "metadata": {"type": "product_info", "domain": "agaile"}
+    },
+    {
+      "query": "What is CAP-AI-PLATFORM designed for?",
+      "expected_answer": "The CAP-AI-PLATFORM is an enterprise-level AI solution for scalable model training, deployment, MLOps, data lineage, and compliance tools, supporting large-scale implementations.",
+      "metadata": {"type": "product_info", "domain": "agaile"}
+    },
+    {
+      "query": "Where can I learn more about Agaile’s leadership team?",
+      "expected_answer": "Visit the Team page (https://agaile.ai/team/) to meet Agaile’s leadership team and learn about their roles and expertise.",
+      "metadata": {"type": "team_page", "domain": "agaile"}
+    },
+    {
+      "query": "Does Agaile integrate with popular CRM platforms?",
+      "expected_answer": "Yes. Agaile’s products, like Zoho AI Assistant and ConvertAI, integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
+      "metadata": {"type": "product_integration", "domain": "agaile"}
+    }
+
+  ]
