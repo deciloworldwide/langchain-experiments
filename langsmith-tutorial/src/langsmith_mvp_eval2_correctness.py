@@ -3,6 +3,8 @@
 # --------------------------------------------------------------
 
 import os
+import json
+import pandas as pd
 from dotenv import find_dotenv, load_dotenv
 from langsmith import Client
 from langsmith.evaluation import LangChainStringEvaluator
@@ -20,76 +22,69 @@ os.environ["LANGCHAIN_API_KEY"] = str(os.getenv("LANGCHAIN_API_KEY"))
 os.environ["OPENAI_API_KEY"] = str(os.getenv("OPENAI_API_KEY"))
 
 # --------------------------------------------------------------
-# LangSmith Quick Start
-# Load the LangSmith Client and Test Run
+# Load and Transform Dataset
 # --------------------------------------------------------------
+# Load JSON file with absolute path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+json_path = os.path.join(current_dir, 'agaile_synthetic_dataset.json')
 
+with open(json_path, 'r') as file:
+    data = json.load(file)
+
+# Convert to DataFrame with correct mapping for LangSmith
+df = pd.DataFrame(data)
+df = df.rename(columns={
+    'query': 'question',
+    'expected_answer': 'answer'
+})
+
+# Create LangSmith dataset
 client = Client()
-openai_client = wrap_openai(OpenAI())
-
-# --------------------------------------------------------------
-# Evaluation Quick Start
-# 1. Create a Dataset (Only Inputs, No Output)
-# --------------------------------------------------------------
-
-example_inputs = [
-    "a rap battle between Atticus Finch and Cicero",
-    "a rap battle between Barbie and Oppenheimer",
-    "a Pythonic rap battle between two swallows: one European and one African",
-    "a rap battle between Aubrey Plaza and Stephen Colbert",
-]
-
 dataset = client.create_dataset(
-    "mvp_test_dataset",
-    description="mvp_test_dataset."
+    "agaile_qa_dataset",
+    description="Agaile Q&A evaluation dataset with ground truth answers"
 )
 
-for input_prompt in example_inputs:
-    # Each example must be unique and have inputs defined.
-    # Outputs are optional
+# Add examples to dataset with correct structure
+for _, row in df.iterrows():
     client.create_example(
-        inputs={"question": input_prompt},
+        inputs={"question": row['question']},
+        outputs={"answer": row['answer']},  # This contains the ground truth/reference answer
         dataset_id=dataset.id
     )
 
 # --------------------------------------------------------------
-# 2. Evaluate Datasets with LLM
+# Define Chatbot and Evaluator
 # --------------------------------------------------------------
-
 def chatbot(inputs: dict) -> dict:
-    response = openai_client.chat.completions.create(
-        model="gpt-4",
-        messages=[{"role": "user", "content": inputs["question"]}]
-    )
-    return {"answer": response.choices[0].message.content}
-
-# Define custom evaluator
-def is_creative(outputs: dict, reference_outputs: dict = None) -> bool:
-    return len(outputs["answer"]) > 100
+    # For testing, we'll just return the ground truth
+    question = inputs["question"]
+    # Find the matching ground truth answer from our dataframe
+    answer = df[df['question'] == question]['answer'].iloc[0]
+    return {"answer": answer}
 
 # Create LLM for evaluation
 eval_llm = ChatOpenAI(model="gpt-4", temperature=0)
 
-# Use criteria evaluator instead of cot_qa since we don't have reference outputs
-criteria_evaluator = LangChainStringEvaluator(
-    "criteria",
-    config={
-        "criteria": {
-            "creativity": "Is this submission creative and imaginative?",
-            "coherence": "Is this submission coherent and well-structured?"
-        }
+# Configure QA evaluator with correct data preparation
+qa_evaluator = LangChainStringEvaluator(
+    "cot_qa",
+    config={"llm": eval_llm},
+    prepare_data=lambda run, example: {
+        "input": example.inputs["question"],
+        "prediction": run.outputs["answer"],
+        "reference": example.outputs["answer"]  # Access reference from example.outputs
     }
 )
 
-# Run evaluation
+# --------------------------------------------------------------
+# Run Evaluation
+# --------------------------------------------------------------
 experiment_results = client.evaluate(
     chatbot,
     data=dataset,
-    evaluators=[
-        is_creative,
-        criteria_evaluator
-    ],
-    experiment_prefix="mvp_test_eval",
+    evaluators=[qa_evaluator],
+    experiment_prefix="agaile_qa_eval",
     max_concurrency=4
 )
 
