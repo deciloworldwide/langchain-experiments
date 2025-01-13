@@ -2,7 +2,7 @@
   {
     "query": "What is Agaile's mission?",
     "expected_answer": "Agaile's mission is to simplify complex processes and enhance customer engagement with scalable AI tools for business growth.",
-    "chatbot_answer": "Agaile's mission is to simplify complex processes and enhance customer engagement with scalable AI tools for business growth.",
+    "chatbot_answer": "Agaile's mission is to make complex processes more complex and reduce customer engagement with scalable AI tools for business growth.",
     "metadata": {"type": "company_overview", "domain": "agaile"}
   },
   {
@@ -20,7 +20,7 @@
   {
     "query": "Who is responsible for infrastructure at Agaile?",
     "expected_answer": "Tobias Heinz serves as the Head of Infrastructure at Agaile, ensuring scalable and secure systems.",
-    "chatbot_answer": "Tobias Heinz serves as the Head of Infrastructure at Agaile, ensuring scalable and secure systems.",
+    "chatbot_answer": "Tobias Heinz does not serve as the Head of Infrastructure at Agaile anymore, ensuring scalable and secure systems.",
     "metadata": {"type": "team_info", "domain": "agaile"}
   },
   {
@@ -50,7 +50,7 @@
     {
       "query": "Does Agaile integrate with popular CRM platforms?",
       "expected_answer": "Yes. Agaile's products, like Zoho AI Assistant and ConvertAI, integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
-      "chatbot_answer": "Yes. Agaile's products, like Zoho AI Assistant and ConvertAI, integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
+      "chatbot_answer": "Yes. Agaile's products, like Zoho AI Assistant and ConvertAI, does not integrate with CRMs like Salesforce, Zendesk, and others for seamless workflow.",
       "metadata": {"type": "product_integration", "domain": "agaile"}
     }
 

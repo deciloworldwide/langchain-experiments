@@ -42,7 +42,7 @@ df = df.rename(columns={
 client = Client()
 dataset = client.create_dataset(
     "agaile_qa_dataset",
-    description="Agaile Q&A evaluation dataset with ground truth answers"
+    description="Agaile Q&A evaluation dataset with ground truth answers and simulated chatbot responses"
 )
 
 # Add examples to dataset with correct structure
@@ -125,6 +125,11 @@ for result in low_score_results:
 # Optional: Convert to pandas for analysis
 df_results = experiment_results.to_pandas()
 print(f"Total examples: {len(df_results)}")
+
+# ÄNDERUNG 1: Korrektur der Spaltenbezeichnung von 'feedback-cot_qa-score' zu 'feedback.cot_qa.score'
+# Dies ist die korrekte Notation, die LangSmith für die Spalten verwendet
 print(f"Examples below threshold: {len(df_results[df_results['feedback.cot_qa.score'] < SCORE_THRESHOLD])}")
+
+# ÄNDERUNG 2: Konsistente Verwendung der Punktnotation auch hier
 print(f"Average score: {df_results['feedback.cot_qa.score'].mean():.2f}")
 
